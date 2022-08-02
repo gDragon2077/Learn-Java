@@ -1,4 +1,7 @@
-{
+import java.util.Scanner;
+
+///Chapter 3 Ex.5
+public class ChapterOne {
     static public void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         System.out.println("Player One -> 1-Rock,2-Scissors,3-Paper");
