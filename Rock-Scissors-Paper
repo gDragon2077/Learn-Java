@@ -1,7 +1,4 @@
-import java.util.Scanner;
-
-///Chapter 3 Ex.5
-public class ChapterOne {
+{
     static public void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         System.out.println("Player One -> 1-Rock,2-Scissors,3-Paper");
@@ -10,38 +7,39 @@ public class ChapterOne {
         System.out.println("Player Two -> 1-Rock,2-Scissors,3-Paper");
         int Player2 = reader.nextInt();
         reader.close();
-
-        switch (Player1) {
-            case 1:
-                System.out.print("Player One he chose Rock and ");
-                break;
-            case 2:
-                System.out.print("Player One he chose Scissors and ");
-                break;
-            case 3:
-                System.out.print("Player One he chose Paper and ");
-                break;
-            default:
-                System.out.print("Null");
-        }
-        switch (Player2) {
-            case 1:
-                System.out.println("Player Two he chose Rock");
-                break;
-            case 2:
-                System.out.println("Player Two he chose Scissors");
-                break;
-            case 3:
-                System.out.println("Player Two he chose Paper");
-                break;
-            default:
-                System.out.println("Null");
-        }
-
-        if (Player1 < Player2) {
-            System.out.println("Player One is Winner");
-        } else {
-            System.out.println("Player two is Winner");
+        if (Player1<4 || Player1>0 || Player2<4 || Player2>0) System.out.println("Fail System");
+        else {
+            switch (Player1) {
+                case 1:
+                    System.out.print("Player One he chose Rock and ");
+                    break;
+                case 2:
+                    System.out.print("Player One he chose Scissors and ");
+                    break;
+                case 3:
+                    System.out.print("Player One he chose Paper and ");
+                    break;
+                default:
+                    System.out.print("Null");
+            }
+            switch (Player2) {
+                case 1:
+                    System.out.println("Player Two he chose Rock");
+                    break;
+                case 2:
+                    System.out.println("Player Two he chose Scissors");
+                    break;
+                case 3:
+                    System.out.println("Player Two he chose Paper");
+                    break;
+                default:
+                    System.out.println("Null");
+            }
+            if (Player1 < Player2) {
+                System.out.println("Player One is Winner");
+            } else {
+                System.out.println("Player two is Winner");
+            }
         }
     }
 }
