@@ -1,0 +1,37 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+public class ChapterOne {
+    static public void main(String[] args) throws IOException {
+        System.out.print("Nume si Prenume: ");
+        BufferedReader name = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println();
+        System.out.print("Ce job iti doresti: ");
+        BufferedReader job = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println();
+        System.out.print("In cat timp crezi ca poti obitne acest job: ");
+        BufferedReader timeJob = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println();
+        System.out.print("Care sunt pasii pe care trebuie sa ii urmezi pentru a te putea angaja: ");
+        BufferedReader employmentSteps = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println();
+        System.out.print("De cand doresti sa incepi: ");
+        BufferedReader timeDesire = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println();
+        String nume = String.valueOf(name.readLine());
+        String job1 = String.valueOf(job.readLine());
+        String tine = String.valueOf(timeJob.readLine());
+        String dorinta = String.valueOf(employmentSteps.readLine());
+        String data = String.valueOf(timeDesire.readLine());
+        // Spatiu de rezultate
+        System.out.println();
+        System.out.println();
+        // Rezultate
+        System.out.println("Candidatul " + nume + " a raspuns astfel la intrebarile de la sus: ");
+        System.out.println("Ce job iti doresti: " + job1);
+        System.out.println("In cat timp crezi ca poti obitne acest job: " + tine);
+        System.out.println("Care sunt pasii pe care trebuie sa ii urmezi pentru a te putea angaja: " + dorinta);
+        System.out.println("De cand doresti sa incepi: " + data);
+        System.out.println("Acestea au fost raspunsurile dare de " + nume);
+    }
+}
