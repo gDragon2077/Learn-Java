@@ -11,9 +11,7 @@ public class ChapterOne {
         int i;
         int sum =0;
         for (i=Nr1;i<Nr2;i++)
-        {
-            sum +=i;
-        }
+        {sum +=i;}
         System.out.println("Suma de la " + Nr1 + " la " + i + " este " + sum);
     }
 }
