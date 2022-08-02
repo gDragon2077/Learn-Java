@@ -1,7 +1,8 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-public class ChapterOne {
+
+    public class ChapterOne {
     static public void main(String[] args) throws IOException {
         System.out.print("Nume si Prenume: ");
         BufferedReader name = new BufferedReader(new InputStreamReader(System.in));
