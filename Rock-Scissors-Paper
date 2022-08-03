@@ -10,7 +10,7 @@ public class ChapterOne {
         System.out.println("Player Two -> 1-Rock,2-Scissors,3-Paper");
         int Player2 = reader.nextInt();
         reader.close();
-        if (Player1<4 || Player1>0 || Player2<4 || Player2>0) System.out.println("Fail System");
+        if (Player1>4 || Player1<0 || Player2>4 || Player2<0) System.out.println("Fail System");
         else {
             switch (Player1) {
                 case 1:
