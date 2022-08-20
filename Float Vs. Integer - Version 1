@@ -1,0 +1,28 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class MainClass {
+    public static void main(String[] args) throws IOException {
+        BufferedReader numberValue1 = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader numberValue2 = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader numberValue3 = new BufferedReader(new InputStreamReader(System.in));
+        // Schimbarea in Float ( Cazult Float difera de String ( String.copyValueOf() / Float.parseFloat() ) )
+        float a = Float.parseFloat(numberValue1.readLine());
+        float b = Float.parseFloat(numberValue2.readLine());
+        float c = Float.parseFloat(numberValue3.readLine());
+
+        float sum = a + b + c;
+
+        // Verificare daca restul impartirii la 1 este 0 sau nu
+
+        if (sum % 1 == 0)
+        {
+            System.out.print("1"); // Valoarea este intreaga
+        }
+        else{
+        System.out.print("0"); // Valoarea nu este intreaga
+        }
+    // In mod normal problema cerea rezolvarea printr-o clasa "int" si return =)))
+    }
+}
