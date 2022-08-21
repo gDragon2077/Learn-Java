@@ -1,0 +1,17 @@
+// Capitolul 4
+// Ex 2
+
+import java.util.Scanner;
+
+public class MainClass {
+    public static void main(String[] args)  {
+       Scanner number = new Scanner(System.in);
+        int a = number.nextInt();
+       number.close();
+
+        int c;
+         c = a % 10;
+         System.out.println(c);
+
+    }
+}
