@@ -1,0 +1,13 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+ // Capitolul 4 
+ // Ex 4
+public class MainClass {
+    public static void main(String[] args) throws IOException {
+        BufferedReader text = new BufferedReader(new InputStreamReader(System.in));
+        String textClear = String.valueOf(text.readLine());
+        System.out.println("Textul are " + textClear.length() + " caractere");
+    }
+} 
+// Sa ma cac in el de ex ca nu are nici un sens in al face in clase.
