@@ -1,0 +1,69 @@
+
+public class Learn {
+    public static void main(String[] args) {
+        int nr = 987236;
+        int rez = nr * 1;
+        int rez2 = nr * 2;
+        int rez3 = nr * 3;
+        int rez4 = nr * 4;
+        int rez5 = nr * 5;
+        int rez6 = nr * 6;
+        int rez7 = nr * 7;
+        int rez8 = nr * 8;
+        int rez9 = nr * 9;
+        int rez10 = nr * 10;
+        System.out.printf("Produlul numarului %d de la 1 la %d este %d,%d,%d,%d,%d,%d,%d,%d,%d,%d,", nr, nr, rez, rez2, rez3, rez4, rez5, rez6, rez7, rez8, rez9, rez10);
+
+        /// ELSE
+        System.out.printf(nr + " x 1 = " + (nr * 1) + "\n");
+        System.out.printf(nr + " x 2 = " + (nr * 2) + "\n");
+        System.out.printf(nr + " x 3 = " + (nr * 3) + "\n");
+        System.out.printf(nr + " x 4 = " + (nr * 4) + "\n");
+        System.out.printf(nr + " x 5 = " + (nr * 5) + "\n");
+        System.out.printf(nr + " x 6 = " + (nr * 6) + "\n");
+        System.out.printf(nr + " x 7 = " + (nr * 7) + "\n");
+        System.out.printf(nr + " x 8 = " + (nr * 8) + "\n");
+        System.out.printf(nr + " x 9 = " + (nr * 9) + "\n");
+        System.out.printf(nr + " x 10 = " + (nr * 10) + "\n");
+        //6
+        int n1 = 100, n2 = 27;
+        System.out.printf("Restul impartirii lui %d la %d este  " + n1 % n2, n1, n2);
+        System.out.println();
+        // 7
+        int x = 234, y = 27;
+        boolean primulMaiMare = x > y;
+        boolean alDoileaMaiMare = x < y;
+        boolean numereEgale = x == y;
+        System.out.println("Primul este mai mare " + primulMaiMare);
+        System.out.println("Al doilea este mai mare " + alDoileaMaiMare);
+        System.out.println("Numerele sunt egale " + numereEgale);
+        //8
+        int nrMeu= 10;
+        System.out.println("Vom incrementa numarulMeu in trei moduri diferite");
+        nrMeu++;
+        nrMeu +=1;
+        nrMeu = nrMeu +1;
+        System.out.println("Dupa ce am adaugat 1 in 3 moduri diferite, numarul mei este egal cu " + nrMeu);
+
+        ///9
+        boolean deiferentaMaiMareDecatZero = x-y>0;
+        boolean diferentaMaiMicaSauEgalaCuZero = x-y<=0;
+        boolean produsulMaiMareDecar100 = x*y >100;
+        System.out.println("dif>0 " + deiferentaMaiMareDecatZero);
+        System.out.println("dif<=0 " + diferentaMaiMicaSauEgalaCuZero);
+        System.out.println("Pro>100 " + produsulMaiMareDecar100);
+        //10
+        System.out.printf("Media Aritmetica a %d %d %d %d numerelor este egala cu " +(nr+n1+n2+x)/4 + "\n",nr,n1,n2,x);
+        System.out.printf("Media Aritmetica a %d %d %d %d numerelor este egala cu " +(nr+n1+n2+y)/4 + "\n",nr,n1,n2,y );
+        System.out.printf("Media Aritmetica a %d %d %d %d numerelor este egala cu " +(nr+n1+n2+nrMeu)/4 + "\n",nr,n1,n2,nrMeu);
+
+        ///ELSE
+        double x1=10.0,x2=20.6,x3=534.0,x4=69.6;
+        double sum123 = x1 +x2 +x3;
+        double sum124 = x1 + x2 + x4;
+        double sum234 = x2 + x3 +x4;
+        System.out.println("Media Aritmetica a numerelor  este egala cu " + (sum123/3));
+        System.out.println("Media Aritmetica a numerelor  este egala cu " + (sum124/3));
+        System.out.println("Media Aritmetica a numerelor  este egala cu " + (sum234/3));
+    }
+}
