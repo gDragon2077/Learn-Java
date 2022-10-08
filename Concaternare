@@ -1,0 +1,10 @@
+public class Learn {
+    public static void main(String[] args) {
+    int num1=100, num2=50;
+        System.out.printf("Primul numar este %d, iar al doilea este %d",num1, num2);
+        System.out.println();
+        int suma=num1+num2, dif=num1-num2,pro=num1*num2,imp=num1/num2;
+        System.out.printf("Suma celor doua este %d, diferenta lor este %d, produlul este %d, iar impartirea lor are ca valoare %d",suma,dif,pro,imp);
+        System.out.println();
+    }
+}
